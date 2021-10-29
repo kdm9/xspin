@@ -1,0 +1,20 @@
+# Heading
+
+test paragraph
+
+```{bash}
+echo test
+```
+
+## second heading
+
+```{bash}
+echo foo bar
+
+```
+
+some more text
+
+```{bash, include=F}
+echo "this is hidden"
+```
