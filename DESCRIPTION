@@ -11,7 +11,8 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
 Imports: 
     fs,
-    knitr
+    knitr,
+    rmarkdown
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
