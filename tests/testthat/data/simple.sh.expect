@@ -10,7 +10,6 @@ echo test
 
 ```{bash}
 echo foo bar
-
 ```
 
 some more text

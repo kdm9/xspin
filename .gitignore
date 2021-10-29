@@ -1,3 +1,4 @@
+tests/testthat/data/*.got
 .Rproj.user
 .Rhistory
 .Rdata
