@@ -9,6 +9,23 @@ handle_close = function(line, output) {
     return(c(output, "```"))
 }
 
+
+#' knitr::spin() for any language
+#'
+#' @description knitr::spin() translates a R script annotated with markdown
+#' comments to a Rmardkown notebook. At least currently, only R scripts are
+#' supported by knitr::spin(), despite Rmardkown having multi-language support.
+#' This function is a much dumber version of spin() that doesn't do any
+#' validation, but which supports any language supported by Rmardkown code
+#' cells.
+#'
+#' @param input     Input script name
+#' @param output    Output Rmarkdown name (defaults to same basename as input
+#'                  but with .Rmd extension)
+#' @param engine    Rmarkdown language engine to use. Defaults to guessing from
+#'                  the extension of `input`.
+#'
+#' @export xspin
 xspin = function(input, output=fs::path_ext_set(input, ".Rmd"), engine=NULL, engine_path=NULL)
 {
     ext = fs::path_ext(input)
