@@ -2,6 +2,7 @@
 # xspin
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/kdm9/xspin/workflows/R-CMD-check/badge.svg)](https://github.com/kdm9/xspin/actions)
 <!-- badges: end -->
 
 The goal of xspin is to ...
