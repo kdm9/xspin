@@ -1,8 +1,8 @@
 #' rmarkdown::render() for any spinscript
 #'
 #' @description rmarkdown::render() is a user-friendly entry point to render an
-#' Rmardkown document. This function is an equivalent for a spin() script in
-#' any language Rmardkown supports.
+#' Rmarkdown document. This function is an equivalent for a spin() script in
+#' any language Rmarkdown supports.
 #'
 #' @param input     Input script name
 #' @param output    Path to compiled output.
@@ -24,11 +24,4 @@ xrender = function(input, output=NULL, engine=NULL, keep_rmd=F, ...)
     if (!keep_rmd) {
         unlink(tmprmd, force=F, recursive=F, expand=F)
     }
-
-
-    
-
-
-
 }
-

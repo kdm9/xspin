@@ -1,4 +1,6 @@
 tests/testthat/data/*.got
+tests/testthat/data/*.tmp.Rmd
+tests/testthat/data/*.html
 .Rproj.user
 .Rhistory
 .Rdata

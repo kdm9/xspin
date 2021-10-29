@@ -1,4 +1,3 @@
-
 test_that("xspin produces correct output", {
     do_test = function(input) {
         res = xspin(input, output=paste0(input, ".got"))
@@ -11,15 +10,14 @@ test_that("xspin produces correct output", {
     
     do_test("data/simple.sh")
     do_test("data/simple.py")
-
 })
 
 test_that("xrender works", {
-    do_test("data/simple.sh")
-    do_test("data/simple.py")
 
     if (file.exists("data/simple.html")) unlink("data/simple.html")
-    xrender("data/simple.sh")
-    expect_true(file.exists("data/simple.html"))
 
+    xrender("data/simple.sh", output_dir="data")
+
+    expect_true(file.exists("data/simple.html"))
+    expect_true(file.exists("data/simple.html"))
 })
