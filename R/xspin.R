@@ -26,7 +26,7 @@ handle_close = function(line, output) {
 #'                  the extension of `input`.
 #'
 #' @export xspin
-xspin = function(input, output=fs::path_ext_set(input, ".Rmd"), engine=NULL, engine_path=NULL)
+xspin = function(input, output=fs::path_ext_set(input, ".Rmd"), engine=NULL)
 {
     ext = fs::path_ext(input)
 
