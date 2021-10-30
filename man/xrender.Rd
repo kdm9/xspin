@@ -19,6 +19,6 @@ xrender(input, output = NULL, engine = NULL, keep_rmd = F, ...)
 }
 \description{
 rmarkdown::render() is a user-friendly entry point to render an
-Rmardkown document. This function is an equivalent for a spin() script in
-any language Rmardkown supports.
+Rmarkdown document. This function is an equivalent for a spin() script in
+any language Rmarkdown supports.
 }
