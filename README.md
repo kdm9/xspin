@@ -5,22 +5,26 @@
 [![R-CMD-check](https://github.com/kdm9/xspin/workflows/R-CMD-check/badge.svg)](https://github.com/kdm9/xspin/actions)
 <!-- badges: end -->
 
-The goal of xspin is to ...
+A version of knitr::spin() which functions on languages other than R. Now one
+can spin() a python/shell/R script to a .Rmd, and compile outputs from there.
+
 
 ## Installation
 
 You can install the development version of xspin like so:
 
-``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+```r
+remotes::install("kdm9/xspin")
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+```r
+# "spin" script to notebook
+xspin::xspin(input="script.sh", output="script.Rmd")
 
-``` r
-library(xspin)
-## basic example code
+# a one-stop-shop: xspin() followed by rmarkdown::render().
+xspin::xweave(input="script.sh")
 ```
 
+See [the test py/sh files](tests/testthat/data/) for example inputs and expected Rmd outputs.
